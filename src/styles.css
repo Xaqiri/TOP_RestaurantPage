@@ -1,0 +1,21 @@
+#nav_bar { 
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+.main { 
+    height: 500px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+}
+
+.item { 
+    background-color: grey;
+    margin: 5%;
+    text-align: center;
+}
