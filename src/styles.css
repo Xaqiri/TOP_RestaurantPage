@@ -1,5 +1,19 @@
+body { 
+    background-color: black;
+}
+
+button { 
+    border: none;
+    background-color: white;
+}
+
+div { 
+    border-radius: 10%;
+}
+
 #nav_bar { 
-    background-color: grey;
+    border-radius: 0;
+    background-color: darkslategray;
     display: flex;
     justify-content: center;
 }
@@ -9,13 +23,20 @@
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
 .item { 
-    background-color: grey;
-    margin: 5%;
+    background-color: darkslategray;
     text-align: center;
+    width: 75%;
+    margin-top: 2%;
+}
+
+.clicked { 
+    background-color: black;
+    color: white;
+    border: none;
 }

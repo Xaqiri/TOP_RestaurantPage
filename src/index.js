@@ -17,17 +17,28 @@ nav.appendChild(menu_button.element)
 nav.appendChild(contact_button.element)
 
 
-home() 
 
 home_button.element.addEventListener('click', () => { 
     c.innerHTML = ""
+    home_button.element.classList.add('clicked')
+    menu_button.element.classList.remove('clicked')
+    contact_button.element.classList.remove('clicked')
     home()
 })
 menu_button.element.addEventListener('click', () => { 
     c.innerHTML = ""
+    home_button.element.classList.remove('clicked')
+    menu_button.element.classList.add('clicked')
+    contact_button.element.classList.remove('clicked')
     menu()
 })
 contact_button.element.addEventListener('click', () => { 
     c.innerHTML = ""
+    home_button.element.classList.remove('clicked')
+    menu_button.element.classList.remove('clicked')
+    contact_button.element.classList.add('clicked')
     contact()
 })
+
+home_button.element.classList.add('clicked')
+home()
